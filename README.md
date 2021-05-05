@@ -1,6 +1,6 @@
 # Azure Red Hat OpenShift (ARO) Test Drive
 
-Please navigate to our [content][content/index.md] to get started!
+Please navigate to our [content](content/lab1.1_index.md) to get started!
 
 ## Resources
 
