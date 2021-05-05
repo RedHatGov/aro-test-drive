@@ -17,6 +17,20 @@ Create an ARO cluster.  You have two options:
 
 Follow the [official tutorial][4] to connect to the cluster.  Download and login using the `oc` CLI.
 
+Test your connection by running:
+
+```bash
+oc cluster-info
+```
+
+> Output (sample):
+
+```
+Kubernetes master is running at https://api.xxxxxxxx.xxxxxx.aroapp.io:6443
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+```
+
 [1]: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
 [2]: https://docs.microsoft.com/en-us/azure/openshift/tutorial-create-cluster
 [3]: https://www.youtube.com/watch?v=OTC1SLMjKaA
