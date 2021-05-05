@@ -6,7 +6,7 @@ Here is an image of the architecture from the demo repository:
 
 ![Architecture](https://github.com/dudash/openshiftexamples-aro-webapp-azuresql/raw/main/.diagrams/HA-webapps-ARO-SQL.png)
 
-You will deploy the modern web application components of this architecture.  Additionally, you will deploy an update to the modern web app's API using the [Ploigos Software Factory][3].
+You will deploy the modern web application components of this architecture.  Additionally, you will deploy an updated version of the modern web app's API using the [Ploigos Software Factory][3].
 
 > TODO: Add content on what is Ploigos
 

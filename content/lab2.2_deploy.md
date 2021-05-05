@@ -1,9 +1,15 @@
 # Deploy Application
 
-Create an OpenShift project:
+Create an OpenShift project for the application:
 
 ```bash
 oc new-project aro
+```
+
+Delete any limit ranges:
+
+```bash
+oc delete limitrange --all -n aro
 ```
 
 Clone the application repo:
