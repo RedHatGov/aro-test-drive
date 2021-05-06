@@ -63,7 +63,7 @@ oc wait builds/modern-webapp-api-1  --for=condition=Complete --timeout=300s
 Deploy the API:
 
 ```bash
-oc new-app --name=modern-webapp-api --image-stream=modern-webapp-api:latest -e CHECKSUM_SECRET=somethingsecret -e QUICKAUTH_USER=user -e QUICKAUTH_PASSWORD=password
+oc new-app --name=modern-webapp-api --image-stream=modern-webapp-api:latest -e QUICKAUTH_ENFORCING=false -e CHECKSUM_ENFORCING=false
 oc expose service modern-webapp-api
 ```
 
@@ -121,3 +121,15 @@ echo $(oc get route modern-webapp-ui --template='http://{{.spec.host}}')
 You should see:
 
 ![Application UI](images/app_ui.png)
+
+Awesome, your cloud native application is running!
+
+Add some scores to the application:
+```
+curl -i -X POST -H Content-Type:application/json -d '{"score": 2000, "name": "TEST"}' $API_SERVER_URL/scores
+curl -i -X POST -H Content-Type:application/json -d '{"score": 1000, "name": "TEST"}' $API_SERVER_URL/scores
+```
+
+You should see:
+
+![Application UI Scores](images/app_ui_scores.png)
