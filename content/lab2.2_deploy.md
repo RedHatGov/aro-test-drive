@@ -15,7 +15,7 @@ oc delete limitrange --all -n aro
 Clone the application repo:
 
 ```bash
-git clone https://github.com/dudash/openshiftexamples-aro-webapp-azuresql
+git clone https://github.com/theckang/openshiftexamples-aro-webapp-azuresql
 cd openshiftexamples-aro-webapp-azuresql
 ```
 
